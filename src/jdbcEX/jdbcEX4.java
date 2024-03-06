@@ -19,7 +19,7 @@ public class jdbcEX4 {
 				Connection con = DriverManager.getConnection(DBURL, DBID, DBPW);
 				String sql = "select * from student where id=?";
 				PreparedStatement preparedStatement = con.prepareStatement(sql);
-				preparedStatement.setString(1, "4");
+				preparedStatement.setString(1, "2");
 				ResultSet result = preparedStatement.executeQuery();
 				
 				while(result.next()) {
